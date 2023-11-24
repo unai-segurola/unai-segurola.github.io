@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Arial', Helvetica, sans-serif;
+  background-color: rgb(255, 227, 71);
+  margin: 0;
+}
+
+header {
+  background-color: #FFA500;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-family: 'myFirstFont';
+  font-size: 5em;
+  color: #121212;
+}
+
+@font-face {
+  font-family: 'myFirstFont';
+  src: url('Heart.Breaking.Bad copy.otf');
+}
+
+nav {
+ /* width: 30%;
+  float: left;*/
+  background: #121212;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;/*H*/
+  
+}
+
+nav li {
+  border-bottom: 1px solid #FFA500;
+  border: 1px; /*h*/
+  width: 20%; /*h*/
+}
+
+nav li a {
+  display: block;
+  color: #FFA500;
+  padding: 8px 16px;
+  text-decoration: none;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+nav li a.active {
+  background-color: #FFA500;
+  color: #121212;
+}
+
+article {
+  /* H width: 70%;
+  float: left; */
+  padding: 20px;
+  background-color: rgb(255, 227, 71);
+  box-sizing: border-box;
+}
+
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+footer {
+  background-color: #383526;
+  padding: 10px;
+  text-align: center;
+  color: #FFA500;
+}
+
+/* Estilos específicos para el cuestionario */
+section form {
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.pregunta {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+input[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Estilos adicionales para mejorar la apariencia del formulario */
+select {
+  width: 100%;
+}
+
+textarea {
+  resize: vertical;
+}
+
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    float: none;
+  }
+}

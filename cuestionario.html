@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <title>Breaking Bad - Cuestionario</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+  <header>
+    <h1>Breaking Bad</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="actors.html">Actores</a></li>
+      <li><a href="galeria.html">Fotos</a></li>
+      <li><a href="temporades.html">Temporadas</a></li>
+      <li><a class="active" href="cuestionario.html">Cuestionario</a></li>
+    </ul>
+  </nav>
+
+  <article>
+    <form action="gracies.html" method="get" name="formulari" id="formulari">
+
+      <div class="pregunta">
+        <h2>Cuestionario Breaking Bad</h2>
+        <p></p>
+
+        <label for="personajeFavorito">1. ¿Cuál es tu personaje favorito de Breaking Bad?</label>
+        <input type="text" id="personajeFavorito" name="personajeFavorito" required>
+      </div>
+
+      <div class="pregunta">
+        <label for="momentoImpactante">2. ¿Cuál es el momento más impactante que recuerdas de la serie?</label>
+        <textarea id="momentoImpactante" name="momentoImpactante" rows="4" required></textarea>
+      </div>
+
+      <div class="pregunta">
+        <label for="opinionFinal">3. ¿Qué opinas del final de Breaking Bad?</label>
+        <select id="opinionFinal" name="opinionFinal" required>
+          <option value="satisfactorio">Satisfactorio</option>
+          <option value="impactante">Impactante</option>
+          <option value="inesperado">Inesperado</option>
+          <option value="otros">Otros</option>
+        </select>
+      </div>
+
+      <div class="pregunta">
+        <label for="mejoraSerie">4. ¿Qué cambiarías o mejorarías en la serie?</label>
+        <input type="text" id="mejoraSerie" name="mejoraSerie" required>
+      </div>
+
+      <input type="submit" value="Enviar respuestas">
+    </form>
+  </article>
+
+  <footer>
+    <p>Unai Segurola</p>
+  </footer>
+
+</body>
+
+</html>
